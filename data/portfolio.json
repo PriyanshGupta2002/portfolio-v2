@@ -1,0 +1,261 @@
+{
+  "_how_to_fill": {
+    "level": "Skill levels are percentages as strings, e.g. \"90%\"",
+    "artColors": "Each project card's gradient uses 3 hex colors: from → to base, accent for glow",
+    "arrays": "Add or remove items freely — projects, skills, experience all render dynamically once wired",
+    "links": "Project card links render from \"links\": [{ \"label\", \"url\" }] — one entry renders as \"GitHub\", Frontend/Backend entries render as two links. An empty array hides the row."
+  },
+
+  "profile": {
+    "name": "Priyansh Gupta",
+    "logoInitials": "PG",
+    "role": "AI Engineer & Full-Stack Developer",
+    "gradientTagline": [
+      "I build intelligent products with",
+      "AI, engineering and obsession."
+    ],
+    "heroSubtitle": "AI Engineer and Full-Stack Developer building production-ready AI applications, agentic systems, RAG pipelines, and modern web products.",
+    "location": "India",
+    "yearsOfExperience": 0,
+    "resumeUrl": "#"
+  },
+
+  "contact": {
+    "email": "guptapriyansh23@gmail.com",
+    "phone": "+91 7380819440",
+    "availability": "Open to opportunities in AI engineering, software engineering, and building intelligent products.",
+    "socials": {
+      "github": "https://github.com/PriyanshGupta2002",
+      "linkedin": "https://www.linkedin.com/in/priyansh-gupta-9527ab215/",
+      "x": ""
+    }
+  },
+
+  "techMarquee": [
+    "Python",
+    "FastAPI",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "LangChain",
+    "LangGraph",
+    "OpenAI",
+    "OpenRouter",
+    "RAG",
+    "AI Agents",
+    "Vector Search",
+    "Docker",
+    "Redis"
+  ],
+
+  "projects": [
+    {
+      "title": "Doc Query",
+      "tag": "AI · RAG · Document Intelligence",
+      "description": "A document question-answering platform that lets users upload documents and interact with their content using retrieval-augmented generation. The system handles document ingestion, chunking, embeddings, semantic retrieval, and grounded LLM responses.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "PostgreSQL",
+        "pgvector",
+        "OpenAI",
+        "Next.js"
+      ],
+      "featured": true,
+      "links": [
+        { "label": "Frontend", "url": "https://github.com/PriyanshGupta2002/docquery" },
+        { "label": "Backend", "url": "https://github.com/PriyanshGupta2002/doc_query_backend_rag" }
+      ],
+      "artColors": {
+        "from": "#5e5ce6",
+        "to": "#bf5af2",
+        "accent": "#ff2d92"
+      }
+    },
+    {
+      "title": "Agentic Chatbot",
+      "tag": "AI · Agents · RAG · Tool Calling",
+      "description": "An agentic conversational AI system capable of combining RAG with dynamic tool calling. The chatbot can retrieve information from documents, invoke external tools, maintain conversational context, and stream responses to users.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "PostgreSQL",
+        "Redis",
+        "Next.js",
+        "SSE"
+      ],
+      "featured": true,
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/PriyanshGupta2002/langrgaph-chatbot" }
+      ],
+      "artColors": {
+        "from": "#0a84ff",
+        "to": "#64d2ff",
+        "accent": "#30d158"
+      }
+    },
+    {
+      "title": "SQL Bot",
+      "tag": "AI · Text-to-SQL · Data Intelligence",
+      "description": "A conversational database interface where users provide their SQL database connection and chat directly with their data. The AI understands database schemas, generates SQL queries, executes them against the connected database, and explains the results in natural language.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "SQL",
+        "PostgreSQL",
+        "LLMs"
+      ],
+      "featured": false,
+      "links": [
+        { "label": "Frontend", "url": "https://github.com/PriyanshGupta2002/sql-agent-frontend" },
+        { "label": "Backend", "url": "https://github.com/PriyanshGupta2002/sql-agent-backend" }
+      ],
+      "artColors": {
+        "from": "#30d158",
+        "to": "#64d2ff",
+        "accent": "#0a84ff"
+      }
+    },
+    {
+      "title": "AI Expense Tracker",
+      "tag": "AI · OCR · Document Processing",
+      "description": "An intelligent expense tracking application where users upload receipts and automatically extract structured expense information. PaddleOCR handles receipt text extraction, while AI processes the extracted information into useful expense data that users can also explore conversationally.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "PaddleOCR",
+        "LLMs",
+        "PostgreSQL",
+        "React"
+      ],
+      "featured": false,
+      "links": [
+        { "label": "Frontend", "url": "https://github.com/PriyanshGupta2002/smart-ai-expense-frontend" },
+        { "label": "Backend", "url": "https://github.com/PriyanshGupta2002/smart-ai-expense-backend" }
+      ],
+      "artColors": {
+        "from": "#ff9f0a",
+        "to": "#ffd60a",
+        "accent": "#ff375f"
+      }
+    }
+  ],
+
+  "skills": {
+    "frontendBars": [
+      {
+        "label": "React & Next.js",
+        "level": "90%"
+      },
+      {
+        "label": "TypeScript & JavaScript",
+        "level": "88%"
+      },
+      {
+        "label": "UI Engineering",
+        "level": "85%"
+      },
+      {
+        "label": "Full-Stack Integration",
+        "level": "90%"
+      }
+    ],
+    "designIntro": "I build interfaces where the frontend is tightly connected to the underlying product and AI experience — from conversational UIs to data-heavy dashboards and document workflows.",
+    "designChips": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN",
+      "Responsive UI",
+      "Dashboard Design",
+      "Conversational UI"
+    ],
+    "backendIntro": "I build backend systems around APIs, databases, asynchronous processing, and AI workloads, with a focus on architectures that can move from prototype to production.",
+    "backendChips": [
+      "Python",
+      "FastAPI",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "REST APIs",
+      "JWT Authentication",
+      "SSE Streaming",
+      "Docker"
+    ],
+    "exploringIntro": "My strongest focus is AI engineering — building systems around LLMs rather than simply calling an API. I work across RAG, agents, tool calling, multimodal retrieval, OCR, and LLM infrastructure.",
+    "exploringChips": [
+      "LLM Engineering",
+      "RAG",
+      "Agentic AI",
+      "LangChain",
+      "LangGraph",
+      "Tool Calling",
+      "Vector Search",
+      "pgvector",
+      "Embeddings",
+      "Prompt Engineering",
+      "LLM Evaluation",
+      "OpenRouter",
+      "Ollama",
+      "Local LLMs",
+      "PaddleOCR",
+      "Multimodal AI"
+    ]
+  },
+
+  "experience": [
+    {
+      "period": "",
+      "role": "AI / Software Engineer",
+      "company": "EXL",
+      "summary": "Working across AI engineering and full-stack development, building intelligent applications involving RAG, conversational AI, agents, document processing, database interaction, and modern web systems.",
+      "tags": [
+        "AI Engineering",
+        "RAG",
+        "LLM Applications",
+        "Full-Stack Development",
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "period": "",
+      "role": "Software Engineer",
+      "company": "Consit",
+      "summary": "Built software products across frontend and backend systems while developing a strong engineering foundation across web applications, APIs, databases, and full-stack product development.",
+      "tags": [
+        "React",
+        "Backend",
+        "APIs",
+        "Databases",
+        "Full-Stack Development"
+      ]
+    }
+  ],
+
+  "footer": {
+    "blurb": "AI engineer building intelligent products from the model layer to the user interface.",
+    "services": [
+      "AI Engineering",
+      "LLM Applications",
+      "RAG Systems",
+      "AI Agents",
+      "Full-Stack Development",
+      "Backend Engineering"
+    ]
+  },
+
+  "seo": {
+    "pageTitle": "Priyansh Gupta — AI Engineer & Full-Stack Developer",
+    "pageDescription": "Portfolio of Priyansh Gupta, an AI Engineer and Full-Stack Developer building RAG systems, AI agents, conversational applications, document intelligence, database AI, and modern web products."
+  }
+}
