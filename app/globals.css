@@ -121,6 +121,12 @@ button {
   cursor: pointer;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-link);
+  outline-offset: 4px;
+}
+
 ::selection {
   background: var(--color-blue);
   color: #fff;
@@ -572,6 +578,40 @@ html.dark .theme-toggle .icon-moon {
   animation-delay: 0.38s;
 }
 
+.hero__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+  animation: fadeUp 0.9s var(--ease-out-expo) both;
+  animation-delay: 0.46s;
+}
+
+.hero__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.06);
+  color: #d2d2d7;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.hero__meta-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #2997ff;
+  box-shadow: 0 0 10px rgba(41, 151, 255, 0.7);
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -865,6 +905,7 @@ html.dark .laptop__ui {
   display: flex;
   flex-direction: column;
   background: var(--color-card);
+  border: 1px solid var(--hairline-soft);
   border-radius: var(--radius-card);
   overflow: hidden;
   transition:
@@ -905,6 +946,24 @@ html.dark .laptop__ui {
   aspect-ratio: 1;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
+}
+
+.work-featured-badge {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  left: 18px;
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-pill);
+  background: rgba(10, 10, 12, 0.35);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .work-art__orb {
@@ -1223,6 +1282,17 @@ html.dark .laptop__ui {
   box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.12);
 }
 
+.timeline__item--current::before {
+  background: var(--color-blue);
+}
+
+.timeline__head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
 .timeline__period {
   font-size: 13px;
   font-weight: 600;
@@ -1231,8 +1301,20 @@ html.dark .laptop__ui {
   color: var(--color-text-tertiary);
 }
 
+.timeline__current {
+  padding: 4px 9px;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 113, 227, 0.1);
+  color: var(--color-link);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .timeline__role {
-  margin-top: 8px;
+  flex-basis: 100%;
+  margin-top: 0;
   font-size: clamp(22px, 2.6vw, 28px);
   font-weight: 650;
   letter-spacing: -0.012em;
@@ -1249,6 +1331,70 @@ html.dark .laptop__ui {
   line-height: 1.5;
   color: var(--color-text-mid);
   max-width: 62ch;
+}
+
+/* ---------- Certifications ---------- */
+.certification-list {
+  margin-top: clamp(40px, 6vw, 60px);
+}
+
+.certification-card {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: clamp(22px, 4vw, 36px);
+  border: 1px solid var(--hairline-soft);
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
+}
+
+.certification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 54px -28px rgba(0, 0, 0, 0.24);
+}
+
+.certification-card__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #2997ff, var(--color-purple));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: 0 12px 28px rgba(94, 92, 230, 0.24);
+}
+
+.certification-card__issuer {
+  color: var(--color-text-tertiary);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.certification-card__title {
+  margin-top: 6px;
+  font-size: clamp(19px, 2.4vw, 25px);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.certification-card__description {
+  max-width: 58ch;
+  margin-top: 8px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.certification-card__link {
+  align-self: center;
 }
 
 /* ---------- Contact CTA ---------- */
@@ -1501,6 +1647,25 @@ html.dark .laptop__ui {
 
   .laptop__base {
     margin-inline: -16px;
+  }
+}
+
+@media (max-width: 620px) {
+  .certification-card {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .certification-card__mark {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    font-size: 11px;
+  }
+
+  .certification-card__link {
+    grid-column: 2;
+    justify-self: start;
   }
 }
 

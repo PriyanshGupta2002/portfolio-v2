@@ -18,6 +18,7 @@ export default function Footer() {
         { label: "Work", href: "#work" },
         { label: "Skills", href: "#skills" },
         { label: "Experience", href: "#experience" },
+        { label: "Certifications", href: "#certifications" },
       ],
     },
     {

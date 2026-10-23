@@ -76,6 +76,32 @@
       }
     },
     {
+      "title": "Multimodal RAG Workspace",
+      "tag": "AI · Multimodal RAG · Document Intelligence",
+      "description": "An end-to-end workspace for asking questions about complex PDFs containing text, tables, charts, diagrams, and images. It extracts document content, uses vision-powered descriptions to make visual information retrievable, searches semantically, and streams grounded answers with citations.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "LangChain",
+        "PostgreSQL",
+        "pgvector",
+        "Hugging Face",
+        "Next.js",
+        "Vision & Language Models"
+      ],
+      "featured": true,
+      "links": [
+        { "label": "Frontend", "url": "https://github.com/PriyanshGupta2002/multimodal-rag-frontend" },
+        { "label": "Backend", "url": "https://github.com/PriyanshGupta2002/multimodal-rag-backend" }
+      ],
+      "artColors": {
+        "from": "#5e5ce6",
+        "to": "#0a84ff",
+        "accent": "#bf5af2"
+      }
+    },
+    {
       "title": "Agentic Chatbot",
       "tag": "AI · Agents · RAG · Tool Calling",
       "description": "An agentic conversational AI system capable of combining RAG with dynamic tool calling. The chatbot can retrieve information from documents, invoke external tools, maintain conversational context, and stream responses to users.",
@@ -214,7 +240,7 @@
 
   "experience": [
     {
-      "period": "",
+      "period": "Feb 2026 – Present",
       "role": "AI / Software Engineer",
       "company": "EXL",
       "summary": "Working across AI engineering and full-stack development, building intelligent applications involving RAG, conversational AI, agents, document processing, database interaction, and modern web systems.",
@@ -228,7 +254,7 @@
       ]
     },
     {
-      "period": "",
+      "period": "Jun 2024 – Feb 2026",
       "role": "Software Engineer",
       "company": "Consint.AI",
       "summary": "Built software products across frontend and backend systems while developing a strong engineering foundation across web applications, APIs, databases, and full-stack product development.",
@@ -239,6 +265,22 @@
         "Databases",
         "Full-Stack Development"
       ]
+    }
+  ],
+
+  "certifications": [
+    {
+      "abbreviation": "CCAR-F",
+      "title": "Claude Certified Architect – Foundations",
+      "issuer": "Anthropic",
+      "description": "A solution-architecture credential focused on designing and building production-grade applications with Claude using Claude Code, the Claude Agent SDK, the Claude API, and MCP.",
+      "focus": [
+        "Claude Code",
+        "Claude Agent SDK",
+        "Claude API",
+        "MCP"
+      ],
+      "url": "https://www.credly.com/badges/1368174d-64ab-4f1c-b17d-3380125780c1"
     }
   ],
 
@@ -256,6 +298,6 @@
 
   "seo": {
     "pageTitle": "Priyansh Gupta — AI Engineer & Full-Stack Developer",
-    "pageDescription": "Portfolio of Priyansh Gupta, an AI Engineer and Full-Stack Developer building RAG systems, AI agents, conversational applications, document intelligence, database AI, and modern web products."
+    "pageDescription": "Portfolio of Priyansh Gupta, an AI Engineer and Full-Stack Developer building RAG systems, AI agents, conversational applications, document intelligence, database AI, and modern web products. Claude Certified Architect – Foundations (CCAR-F)."
   }
 }

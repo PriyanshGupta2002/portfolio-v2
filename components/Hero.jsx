@@ -5,6 +5,9 @@ import data from "@/data/portfolio.json";
 
 export default function Hero() {
   const { profile } = data;
+  const currentExperience = data.experience.find((item) =>
+    item.period?.includes("Present")
+  );
 
   return (
     <section className="hero" id="overview">
@@ -35,6 +38,20 @@ export default function Hero() {
             Get in touch <span aria-hidden="true">›</span>
           </a>
         </div>
+
+        {(currentExperience || profile.location) && (
+          <div className="hero__meta" aria-label="Current role and location">
+            {currentExperience && (
+              <span className="hero__meta-item">
+                <span className="hero__meta-dot" aria-hidden="true" />
+                {currentExperience.role} at {currentExperience.company}
+              </span>
+            )}
+            {profile.location && (
+              <span className="hero__meta-item">{profile.location}</span>
+            )}
+          </div>
+        )}
 
         {/* Pure-CSS MacBook mockup */}
         <div className="laptop" role="img" aria-label="MacBook mockup showing a portfolio website">

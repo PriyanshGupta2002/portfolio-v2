@@ -89,9 +89,11 @@ Headlines end with a period ("Selected projects."). That is intentional voice.
 ## 6. Signature components
 
 - **Navbar** — fixed 48px (44px mobile), `backdrop-filter: saturate(180%) blur(20px)` over 80% surface, hairline shadow after 8px scroll, full-screen frosted overlay menu ≤833px
-- **Hero** — black section, three blurred aurora glows (blue/purple/pink, `drift` animation), pure-CSS MacBook mockup whose "screenshot" follows the active theme via scoped `--ui-*` vars
+- **Hero** — black section, three blurred aurora glows (blue/purple/pink, `drift` animation), current role/location metadata, pure-CSS MacBook mockup whose "screenshot" follows the active theme via scoped `--ui-*` vars
 - **Marquee** — seamless infinite scroll (list rendered twice, `translateX(-50%)` loop), pauses on hover
-- **Work cards** — gradient art from `--g1/--g2/--g3`, glass chip, watermark title, lift-on-hover
+- **Work cards** — gradient art from `--g1/--g2/--g3`, glass chip, watermark title, featured badge, concise technology chips, lift-on-hover
+- **Experience timeline** — current role is identified by its `Present` period and emphasized in the timeline
+- **Certifications** — verified credentials are data-driven cards with topic chips and an external verification link
 - **Bento** — animated skill bars: fill width animates to `--level` when parent `.reveal.is-visible`
 - **CTA banner** — black rounded promo tile with radial glow accents
 - **Footer** — multi-column 12px small-print, hairline-separated legal row
@@ -115,7 +117,7 @@ Headlines end with a period ("Selected projects."). That is intentional voice.
 - Semantic landmarks (`header/nav/main/footer/section`), labelled progress bars
 - Icon-only controls have `aria-label`; decorative elements `aria-hidden`
 - Text contrast follows Apple's palette (verified pairs above); don't lighten grays on dark beyond the tokens listed
-- Keyboard-focusable nav, menu, toggle
+- Keyboard-focusable nav, menu, toggle, and visible `:focus-visible` indicators for links and buttons; external credential links open in a new tab
 
 ## 10. Rules for AI agents editing this repo
 

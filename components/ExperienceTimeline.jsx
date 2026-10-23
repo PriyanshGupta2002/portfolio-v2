@@ -15,9 +15,17 @@ export default function ExperienceTimeline() {
 
         <ol className="timeline">
           {data.experience.map((item, i) => (
-            <Reveal key={item.company} delay={i * 90} as="li" className="timeline__item">
+            <Reveal
+              key={item.company}
+              delay={i * 90}
+              as="li"
+              className={`timeline__item ${item.period?.includes("Present") ? "timeline__item--current" : ""}`}
+            >
               <div className="timeline__head">
                 {item.period && <span className="timeline__period">{item.period}</span>}
+                {item.period?.includes("Present") && (
+                  <span className="timeline__current">Current role</span>
+                )}
                 <h3 className="timeline__role">
                   {item.role} <span className="timeline__company">· {item.company}</span>
                 </h3>
